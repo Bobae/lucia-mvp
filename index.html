@@ -1,13 +1,23 @@
+<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Allow Vite’s HMR to use eval() during dev: -->
-    <meta http-equiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline';" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucia</title>
+    <!-- Allow Vite’s injected inline <style> blocks -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self';
+      script-src 'self' 'unsafe-eval';
+      style-src 'self' 'unsafe-inline';
+      connect-src 'self' https://*.supabase.co;
+    "
+    />
+    <link rel="icon" href="/favicon.svg" />
+    <title>Lucia MVP</title>
   </head>
+
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

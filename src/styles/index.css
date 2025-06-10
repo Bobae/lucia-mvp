@@ -1,3 +1,15 @@
+/* src/styles/index.css */
+
+/* DEBUG: this should turn your page background light blue */
+body { background: lightblue !important; }
+
+/* 1. Tailwind base styles (resets, etc.) */
 @tailwind base;
+
+/* 2. Tailwind component classes (prebuilt UI) */
 @tailwind components;
+
+/* 3. Tailwind utility classes */
 @tailwind utilities;
+
+/* —then any of your custom global overrides below— */

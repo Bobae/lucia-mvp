@@ -1,4 +1,7 @@
-import CycleLogger from './components/CycleLogger'
+// src/App.jsx
+import './styles/index.css'
+import React from 'react'
+import CycleLogger from './components/CycleLogger.jsx'
 
 // For now you can hard-code a test UUID until you wire up Auth:
 const TEST_USER_ID = '00000000-0000-0000-0000-000000000000'

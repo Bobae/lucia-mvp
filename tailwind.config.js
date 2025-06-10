@@ -1,15 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js  or  tailwind.config.cjs
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // adjust as needed for your file types
+    './index.html',           // if you have one
+    './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {}, // optional: customize colors, spacing, fonts, etc.
+    extend: {},
   },
-  plugins: [
-  require('@tailwindcss/forms'),
-  require('@tailwindcss/typography'),
-] , // optional: add Tailwind plugins here
-
-};
+  plugins: [],
+}
